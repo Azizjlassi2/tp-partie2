@@ -1,0 +1,54 @@
+[
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "unittest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "unittest",
+        "description": "unittest",
+        "detail": "unittest",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "hello",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def hello():\n    return \"Hello , CI/CD!\"\nif __name__ == \"__main__\":\n    app.run()",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app = Flask(__name__ )\n@app.route(\"/\")\ndef hello():\n    return \"Hello , CI/CD!\"\nif __name__ == \"__main__\":\n    app.run()",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "TestApp",
+        "kind": 6,
+        "importPath": "test_app",
+        "description": "test_app",
+        "peekOfCode": "class TestApp( unittest.TestCase ):\n    def test_home_route( self ):\n        tester = app.test_client(self)\n        response = tester.get('/')\n        self.assertEqual( response.status_code , 200)",
+        "detail": "test_app",
+        "documentation": {}
+    }
+]
